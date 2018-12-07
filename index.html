@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Index</title>
+    <script src="/pages.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css" media="all">
+      html, body {
+        margin: 0;
+        padding: 0;
+
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #output {
+        display: flex;
+        flex-flow: row wrap;
+
+        justify-content: space-between;
+        align-content: space-between;
+
+        width: 100%;
+        height: 100%;
+      }
+
+      .sticker {
+        width: 42mm;
+        height: 42mm;
+      }
+    </style>
+    <style type="text/css" media="screen">
+      body {
+        display: flex;
+
+        font-family: sans-serif;
+      }
+
+      section {
+        flex: 1 1 auto;
+      }
+
+      input[type="number"] {
+        width: 5em;
+      }
+
+      #preview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #output {
+        transition: all 0.3s;
+
+        width: 210mm;
+        height: 297mm;
+        flex-grow: 0;
+        align-self: center;
+
+        box-sizing: border-box;
+
+        padding: 12mm 15.5mm 12mm 14mm;
+        margin: 1em;
+
+        outline: 1px solid #999;
+        box-shadow: 4px 4px 4px #999;
+
+        zoom: 0.6;
+      }
+
+      .sticker {
+        transition: all 0.3s;
+      }
+    </style>
+    <style type="text/css" media="print">
+      #controls {
+        display: none;
+      }
+
+      @page {
+        margin: 12mm 15.5mm 12mm 14mm;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="controls">
+      <form action="" method="get" accept-charset="utf-8">
+        <fieldset>
+          <legend>Preset</legend>
+          <label for="preset">
+            Preset
+          </label>
+          <select id="preset">
+            <option>Avery E3613</option>
+            <option>Avery 5293</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Dimensions</legend>
+
+          <div class="field">
+            <label for="page_size">Page size</label>
+            <select id="page_size" name="">
+              <option value="">A4</option>
+              <option value="">US Letter</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="page_width">Page width</label>
+            <input type="number" id="page_width" />
+            <select id="page_width_unit">
+              <option>mm</option>
+              <option>in</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="page_height">Page height</label>
+            <input type="number" id="page_height" />
+            <select id="page_height_unit">
+              <option>mm</option>
+              <option>in</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Margins</legend>
+
+          <div class="field">
+            <label for="margin_top">Top</label>
+            <input type="number" id="margin_top" />
+            <select id="margin_top_unit">
+              <option>mm</option>
+              <option>in</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="margin_right">Right</label>
+            <input type="number" id="margin_right" />
+            <select id="margin_right_unit">
+              <option>mm</option>
+              <option>in</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="margin_bottom">Bottom</label>
+            <input type="number" id="margin_bottom" />
+            <select id="margin_bottom_unit">
+              <option>mm</option>
+              <option>in</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="margin_left">Left</label>
+            <input type="number" id="margin_left" />
+            <select id="margin_left_unit">
+              <option>mm</option>
+              <option>in</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Stickers</legend>
+          <label for="stickers_bleed">Bleed</label>
+          <input type="checkbox" id="stickers_bleed" />
+        </fieldset>
+      </form>
+    </section>
+    <section id="preview">
+      <section id="output">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+        <img class="sticker" src="images/sticker.png" alt="">
+      </section>
+    </section>
+  </body>
+</html>
